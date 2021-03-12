@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <!--Import Vue-->
+   <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+   <style>
+      body,
+      a {
+         background: #000000;
+         color: #ffffff;
+      }
+   </style>
+
+   <title>Events exercise</title>
+</head>
+
+<body>
+   <div id="challenge">
+      <button v-on:click="showAlert">Show Alert</button>
+
+      <br><br>
+      <input type="text" v-on:keyup="inputValue1 = $event.target.value">
+      <p>{{ inputValue1 }}</p>
+
+      <br><br>
+      <input type="text" v-on:keyup.enter="changeValue">
+      <p>{{ inputValue2 }}</p>
+   </div>
+
+   <script src="./script.js"></script>
+</body>
+
+</html>

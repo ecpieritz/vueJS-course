@@ -1,0 +1,32 @@
+body{
+   background: #000000;
+   color: #ffffff;
+}
+
+.boxes{
+   margin: 5vw;
+   display: flex;
+   justify-content: space-around;
+}
+
+.demo{
+   width: 25vw;
+   height: 25vw;
+   background: #8c959b;
+}
+
+.blue{
+   background: #6db0dd;
+}
+
+.rose{
+   background: #b87ca4;
+}
+
+.green{
+   background: #6dddbb;
+}
+
+.turn{
+   transform: rotate(45deg);
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <!--Import Vue-->
+   <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+   <style>
+      body,
+      a {
+         background: #000000;
+         color: #ffffff;
+      }
+   </style>
+
+   <title>Template versão 1</title>
+</head>
+
+<body>
+   <div id="app">
+      <h1 v-once>{{ titleh1 }}</h1>
+      <!--v-once serve para que seja atualizado uma única vez-->
+      <p>{{ saudation() }}</p>
+      <p>{{ title() }}</p>
+      <a v-bind:href="link">Perfil no Github</a>
+      <p v-html="linkHtml"></p>
+   </div>
+
+   <script src="./script.js"></script>
+</body>
+
+</html>

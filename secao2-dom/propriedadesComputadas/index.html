@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <!--Import Vue-->
+   <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+   <style>
+      body,
+      a {
+         background: #000000;
+         color: #ffffff;
+         margin: 50px;
+      }
+   </style>
+
+   <title>Propriedades computadas</title>
+</head>
+
+<body>
+   <!--Propriedades computadas são síncronas-->
+   <div id="app">
+      <button v-on:click="increase">Increase</button>
+      <button v-on:click="counter2++">Increase</button>
+      <h3>Counter: {{counter}} | {{counter2}}</h3>
+      <h3>Result: {{result}}</h3>
+      <button v-on:click="decrease">Decrease</button>
+      <button v-on:click="counter2--">Decrease</button>
+   </div>
+
+   <script src="./script.js"></script>
+</body>
+
+</html>

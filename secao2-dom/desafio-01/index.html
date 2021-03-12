@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Import Vue-->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+    <style>
+        body,
+        a {
+            background: #000000;
+            color: #ffffff;
+        }
+    </style>
+
+    <title>First Challenge</title>
+</head>
+
+<body>
+    <div id="challenge">
+        <p>Using VueJS - {{name}} ({{age}} years)</p>
+
+        <p>{{age}} x 3 = {{age * 3}}</p>
+
+        <p>Random number between 0 and 1 using JS: {{randomic()}}</p>
+        <p>Random number between 0 and 1: {{Math.random()}}</p>
+
+        <div>
+            <img v-bind:src="image" height="300" align="center">
+        </div>
+
+        <div>
+            <input type="text" v-bind:value="name">
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>

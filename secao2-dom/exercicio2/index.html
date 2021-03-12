@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <!--Import Vue-->
+   <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+   <style>
+      body,
+      a {
+         background: #000000;
+         color: #ffffff;
+      }
+   </style>
+
+   <title>Exercicio 2</title>
+</head>
+
+<body>
+   <div id="app">
+      <h1>{{counter}}</h1>
+
+      <button v-on:click="sum"> add 1</button>
+      <!--v-on ouve a diretriz para chamar a função de acordo com o evento chamado-->
+      <p v-on:mousemove="XandY">Mouse: {{x}} e {{y}}
+         <span v-on:mousemove="stopHere">Stop here!</span></p>
+      <!--se colocar v-on:mousemove.stop acontecerá o mesmo que a função criada-->
+      <h1>{{counter2}}</h1>
+      <button v-on:click="sum2(5, $event)"> add 5</button>
+      <br><br>
+      <a v-on:click.prevent href="http://google.com.br">Google</a>
+      <!--.prevent previne os parâmetros default-->
+      <br><br>
+      <a v-on:click="stopNav" href="http://github.com">Github</a>
+      <br><br>
+      <input type="text" v-on:keyup.enter="showAlert">
+   </div>
+
+   <script src="./script.js"></script>
+</body>
+
+</html>

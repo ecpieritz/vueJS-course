@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <!--Import Vue-->
+   <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+   <!--Import Style-->
+   <link rel="stylesheet" href="./style.css">
+
+   <title>Estilo dinâmico e Classe CSS</title>
+</head>
+
+<body>
+   <div id="app">
+      <div class="demo" :class="{blue: applyBlue}" @click="applyBlue = !applyBlue"></div>
+      <div class="demo" :class="{rose: applyRose}" @click="applyRose = !applyRose"></div>
+      <div class="demo" :class="{green: applyGreen}" @click="applyGreen = !applyGreen"></div>
+   </div>
+
+   <script src="./script.js"></script>
+</body>
+
+</html>
