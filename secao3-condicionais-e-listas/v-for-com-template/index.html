@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <!--Import Vue-->
+   <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+   <!--Import Style-->
+   <link rel="stylesheet" href="./style.css">
+
+   <title>Usando v-for com Template</title>
+</head>
+
+<body>
+   <div id="app">
+      <ul>
+         <li v-for="(color, i) in colors">{{i + 1}} - {{color}}</li>
+         <!--indice sempre é o 2º elemento-->
+      </ul>
+
+      <hr>
+
+      <template v-for="(color, i) in colors">
+         <h1>{{color}}</h1>
+         <h3>{{i}}</h3>
+      </template>
+
+      <hr>
+
+      <div v-for="(color, i) in colors">
+         <h1>{{color}}</h1>
+         <h3>{{i}}</h3>
+      </div>
+   </div>
+
+   <script src="./script.js"></script>
+</body>
+
+</html>

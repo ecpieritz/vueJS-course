@@ -1,0 +1,13 @@
+body{
+   background: #000000;
+   color: #ffffff;
+}
+
+h1,h3{
+   display: inline;
+}
+
+p{
+   margin: 0;
+   padding: 0;
+}

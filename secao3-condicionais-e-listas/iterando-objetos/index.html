@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <!--Import Vue-->
+   <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+   <!--Import Style-->
+   <link rel="stylesheet" href="./style.css">
+
+   <title>Iterando em objetos</title>
+</head>
+
+<body>
+   <div id="app">
+      <ul>
+         <li v-for="(color, i) in colors" style="list-style: none;">{{i + 1}} - {{color}}</li>
+         <!--indice sempre é o 2º elemento-->
+      </ul>
+
+      <hr>
+
+      <template v-for="(color, i) in colors">
+         <h1>{{color}}</h1>
+         <h3>{{i}}</h3>
+      </template>
+
+      <hr>
+
+      <div v-for="(color, i) in colors">
+         <h1>{{color}}</h1>
+         <h3>{{i}}</h3>
+      </div>
+
+      <hr>
+
+      <ul>
+         <li v-for="person in persons">
+            <p v-for="(value, key, index) in person">{{index + 1}}. {{key}}: {{value}}</p>
+         </li>
+      </ul>
+   </div>
+
+   <script src="./script.js"></script>
+</body>
+
+</html>

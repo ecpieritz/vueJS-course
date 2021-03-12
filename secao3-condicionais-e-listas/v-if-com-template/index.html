@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <!--Import Vue-->
+   <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+   <!--Import Style-->
+   <link rel="stylesheet" href="./style.css">
+
+   <title>Usando viif com Template</title>
+</head>
+
+<body>
+   <div id="app">
+      <template v-if="loggedIn">
+         <p>Logged in user: {{name}}</p>
+         <p>Profile: Admin</p>
+      </template>
+      <!--caso não queira que fique aparecendo, por exemplo, a tag
+      <div> é só trocar por template que ele manterá o template usado-->
+      <p v-else-if="anonymous">Searching as anonymous</p>
+      <p v-else>No users logged in</p>
+
+      <button @click="loggedIn =!loggedIn">{{loggedIn ? "Log out" : "Login"}}</button>
+      <p><input type="checkbox" v-model="anonymous"> Anonymous</p>
+   </div>
+
+   <script src="./script.js"></script>
+</body>
+
+</html>

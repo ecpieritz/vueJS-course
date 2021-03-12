@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <!--Import Vue-->
+   <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+   <!--Import Style-->
+   <link rel="stylesheet" href="./style.css">
+
+   <title>Condicional com v-if/v-else</title>
+</head>
+
+<body>
+   <div id="app">
+      <p v-if="loggedIn">Logged in user: {{name}}</p>
+      <p v-else>No users logged in</p>
+      <!--
+         v-else somente funcionará se na linha acima tiver um v-if
+      -->
+
+      <button @click="loggedIn =!loggedIn">{{loggedIn ? "Log out" : "Login"}}</button>
+   </div>
+
+   <script src="./script.js"></script>
+</body>
+
+</html>
