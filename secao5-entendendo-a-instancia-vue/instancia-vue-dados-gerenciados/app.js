@@ -1,7 +1,7 @@
 const vm = new Vue({
    el: "#app",
    data: {
-      title1: "Multi instância em Vue",
+      title: "Multi instância em Vue",
    },
    computed: {
 
@@ -11,7 +11,7 @@ const vm = new Vue({
    },
    methods: {
       change(){
-         this.title1 += '!!';
+         this.title += '!!';
       }
    }
 
@@ -19,4 +19,4 @@ const vm = new Vue({
 });
 
 vm.newInfo = "teste!";
-console.log(newInfo);
+console.log(vm.newInfo);
