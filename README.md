@@ -1,6 +1,3 @@
-# vueJS-course
-Vue.js course taught by Leonardo Moura Leitao
-
 <h1 align = "center"> :fast_forward: VueJS Course :rewind: </h1>
 <h6 align = "center"> pt-Br </h6>
 
