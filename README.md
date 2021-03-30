@@ -41,5 +41,18 @@ git clone https://github.com/ecpieritz/vueJS-course.git
 #### Enter directory
 `cd vueJS-course`
 
+#### Enter the chosen folder
+`cd folderName`
+
+#### Project setup
+```
+npm install
+```
+
+#### Compiles and hot-reloads for development
+```
+npm run serve
+```
+
 ---
 Developed with 💙 by Emilyn C. Pieritz
