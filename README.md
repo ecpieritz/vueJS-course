@@ -14,6 +14,7 @@
 - Vue
 - Vue CLI
 - Vuex
+- Bootstrap
 
 ---
 
