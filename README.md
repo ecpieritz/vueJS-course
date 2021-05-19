@@ -55,10 +55,6 @@
 17. Better state management with Vuex
 18. Project 3 - The stock trader
 19. Publishing a VueJS application on Amazon
-20. Project 4 - Calculator
-21. Project 5 - Monty Hall problem
-22. Project 6 - Knowledge base - backend
-23. Project 6 - Knowledge base - frontend
 
 ---
 
