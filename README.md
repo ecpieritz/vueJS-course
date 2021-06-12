@@ -2,8 +2,7 @@
 <h6 align = "center"> pt-Br </h6>
 
 ## 📖 About
-<p>Vue.js 2 course taught by Leonardo Moura Leitao
-</p>
+<p>Vue.js 2 course taught by Leonardo Moura Leitao</p>
 
 ---
 
