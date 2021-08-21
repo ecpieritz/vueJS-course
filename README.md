@@ -13,6 +13,7 @@
 - Vue
 - Vue CLI
 - Vuex
+- VueRouter
 - Bootstrap
 
 ---
